@@ -235,7 +235,7 @@ public class Program implements ProgramI {
 			}
 			long timebc = System.currentTimeMillis() - msec;
 			print("\n\n", "\nTime for comparing with Basecode: " + ((timebc / 3600000 > 0) ? (timebc / 3600000) + " h " : "")
-					+ ((timebc / 60000 > 0) ? ((timebc / 60000) % 60000) + " min " : "") + (timebc / 1000 % 60) + " sec\n"
+					+ ((timebc / 60000 > 0) ? ((timebc / 60000) % 60) + " min " : "") + (timebc / 1000 % 60) + " sec\n"
 					+ "Time per basecode comparison: " + (timebc / size) + " msec\n\n");
 		}
 
@@ -283,7 +283,7 @@ public class Program implements ProgramI {
 		long time = System.currentTimeMillis() - msec;
 
 		print("\n", "Total time for comparing submissions: " + ((time / 3600000 > 0) ? (time / 3600000) + " h " : "")
-				+ ((time / 60000 > 0) ? ((time / 60000) % 60000) + " min " : "") + (time / 1000 % 60) + " sec\n" + "Time per comparison: "
+				+ ((time / 60000 > 0) ? ((time / 60000) % 60) + " min " : "") + (time / 1000 % 60) + " sec\n" + "Time per comparison: "
 				+ (time / anz) + " msec\n");
 
 		Cluster cluster = null;
@@ -327,7 +327,7 @@ public class Program implements ProgramI {
 			}
 			long timebc = System.currentTimeMillis() - msec;
 			print("\n\n", "\nTime for comparing with Basecode: " + ((timebc / 3600000 > 0) ? (timebc / 3600000) + " h " : "")
-					+ ((timebc / 60000 > 0) ? ((timebc / 60000) % 60000) + " min " : "") + (timebc / 1000 % 60) + " sec\n"
+					+ ((timebc / 60000 > 0) ? ((timebc / 60000) % 60) + " min " : "") + (timebc / 1000 % 60) + " sec\n"
 					+ "Time per basecode comparison: " + (timebc / size) + " msec\n\n");
 		}
 
@@ -378,7 +378,7 @@ public class Program implements ProgramI {
 		long time = System.currentTimeMillis() - msec;
 
 		print("\n", "Total time for comparing submissions: " + ((time / 3600000 > 0) ? (time / 3600000) + " h " : "")
-				+ ((time / 60000 > 0) ? ((time / 60000) % 60000) + " min " : "") + (time / 1000 % 60) + " sec\n" + "Time per comparison: "
+				+ ((time / 60000 > 0) ? ((time / 60000) % 60) + " min " : "") + (time / 1000 % 60) + " sec\n" + "Time per comparison: "
 				+ (time / anz) + " msec\n");
 
 		Cluster cluster = null;
@@ -691,7 +691,7 @@ public class Program implements ProgramI {
 
 		totalTime += System.currentTimeMillis() - startTime;
 		totalTimeStr = "" + ((totalTime / 3600000 > 0) ? (totalTime / 3600000) + " h " : "")
-				+ ((totalTime / 60000 > 0) ? ((totalTime / 60000) % 60000) + " min " : "") + (totalTime / 1000 % 60) + " sec";
+				+ ((totalTime / 60000 > 0) ? ((totalTime / 60000) % 60) + " min " : "") + (totalTime / 1000 % 60) + " sec";
 
 		print("Total comparison time: " + totalTimeStr + "\nComparisons: " + count + "/" + comparisons + "/" + totalComparisons + "\n",
 				null);
@@ -947,7 +947,7 @@ public class Program implements ProgramI {
 		}
 		long time = System.currentTimeMillis() - msec;
 		print("\n\n", "\nTotal time for parsing: " + ((time / 3600000 > 0) ? (time / 3600000) + " h " : "")
-				+ ((time / 60000 > 0) ? ((time / 60000) % 60000) + " min " : "") + (time / 1000 % 60) + " sec\n"
+				+ ((time / 60000 > 0) ? ((time / 60000) % 60) + " min " : "") + (time / 1000 % 60) + " sec\n"
 				+ "Time per parsed submission: " + (count > 0 ? (time / count) : "n/a") + " msec\n\n");
 	}
 
@@ -986,7 +986,7 @@ public class Program implements ProgramI {
 		print("\nBasecode submission parsed!\n", null);
 		long time = System.currentTimeMillis() - msec;
 		print("\n", "\nTime for parsing Basecode: " + ((time / 3600000 > 0) ? (time / 3600000) + " h " : "")
-				+ ((time / 60000 > 0) ? ((time / 60000) % 60000) + " min " : "") + (time / 1000 % 60) + " sec\n");
+				+ ((time / 60000 > 0) ? ((time / 60000) % 60) + " min " : "") + (time / 1000 % 60) + " sec\n");
 	}
 
 	// Excluded files:
@@ -1316,7 +1316,7 @@ public class Program implements ProgramI {
 		options.setProgress(100);
 		long time = System.currentTimeMillis() - msec;
 		print("\n", "Total time: " + ((time / 3600000 > 0) ? (time / 3600000) + " h " : "")
-				+ ((time / 60000 > 0) ? ((time / 60000) % 60000) + " min " : "") + (time / 1000 % 60) + " sec\n" + "Time per comparison: "
+				+ ((time / 60000 > 0) ? ((time / 60000) % 60) + " min " : "") + (time / 1000 % 60) + " sec\n" + "Time per comparison: "
 				+ (time / anz) + " msec\n");
 
 	}
